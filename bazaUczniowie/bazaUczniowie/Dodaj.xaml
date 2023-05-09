@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bazaUczniowie.Dodaj">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Podaj dane nowego ucznia"></Label>
+            <Label Text="Imie:"></Label>
+            <Entry x:Name="imieW"></Entry>
+            <Label Text="Nazwisko:"></Label>
+            <Entry x:Name="nazwiskoW"></Entry>
+            <Label Text="Klasa:"></Label>
+            <Entry x:Name="klasaW" Keyboard="Numeric"></Entry>
+            <Label Text="Płeć:"></Label>
+            <StackLayout>
+                <RadioButton Content="Kobieta" IsChecked="True" x:Name="kobietaW"></RadioButton>
+                <RadioButton Content="Mężczyzna"></RadioButton>
+            </StackLayout>
+            <Label Text="Miasto:"></Label>
+            <Entry x:Name="miastoW"></Entry>
+
+            <Button Text="Dodaj ucznia" Clicked="Button_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
